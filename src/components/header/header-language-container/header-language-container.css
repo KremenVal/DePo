@@ -1,0 +1,11 @@
+.header--container-select .header--container-selected {
+    display: flex;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+@media (min-width: 728px) {
+    .header--container-select .header--container-selected {
+        margin-top: 26px;
+    }
+}

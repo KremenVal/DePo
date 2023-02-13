@@ -1,0 +1,145 @@
+.exchange-crypto--form-fields {
+    display: flex;
+    flex-direction: column;
+    margin-top: 23px;
+    background-color: #F5F9FE;
+    border-radius: 9px;
+    width: 100%;
+}
+
+.exchange-crypto--form-item {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    margin: 0 16px;
+}
+
+.exchange-crypto--form-item:nth-child(2) {
+    border-top: 1px solid rgba(207, 219, 213, 0.6);
+    border-bottom: 1px solid rgba(207, 219, 213, 0.6);
+}
+
+.exchange-crypto--form-text {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 9px;
+    color: #5D5D5B;
+    display: flex;
+    max-width: 70px;
+    width: 100%;
+}
+
+.exchange-crypto--form-select {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.exchange-crypto--form-selected, .exchange-crypto--form-payment {
+    font-family: 'Inter Bold';
+    font-weight: 700;
+    font-size: 11px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+}
+
+.exchange-crypto--form-selected:before, .exchange-crypto--form-payment.bitcoin:before, .exchange-crypto--form-payment.ethereum:before {
+    content: '';
+    display: flex;
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 6px;
+}
+
+.exchange-crypto--form-selected.bitcoin:before, .exchange-crypto--form-payment.bitcoin:before {
+    background-image: url(./img/bitcoin.svg);
+}
+
+.exchange-crypto--form-selected.ethereum:before, .exchange-crypto--form-payment.ethereum:before {
+    background-image: url(./img/ethereum.svg);
+}
+
+.exchange-crypto--form-selected:after {
+    content: '';
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-image: url(./img/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    position: absolute;
+    right: 0;
+    transform: translateX(0);
+    transition: all .3s;
+}
+
+.exchange-crypto--form-selected.show:after {
+    transform: rotateX(180deg);
+}
+
+.exchange-crypto--form-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    border-radius: 6px;
+    background-color: #fff;
+    top: 20px;
+    width: 103%;
+    left: -5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s;
+}
+
+.exchange-crypto--form-list.show {
+    max-height: 50px;
+    z-index: 1;
+}
+
+.exchange-crypto--form-payment {
+    padding: 5px;
+}
+
+.PhoneInputInput, .exchange-crypto--form-data {
+    border: none;
+    background-color: #F5F9FE;
+    color: #000!important;
+    font-family: 'Inter Bold';
+    font-weight: 700;
+    font-size: 11px;
+    width: 100%;
+    outline: none;
+}
+
+.PhoneInputInput:-webkit-autofill, .PhoneInputInput:-webkit-autofill:hover, .PhoneInputInput:-webkit-autofill:focus, .PhoneInputInput:-webkit-autofill:active {
+    background-color: #F5F9FE;
+}
+
+.PhoneInputInput::placeholder, .exchange-crypto--form-data::placeholder {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 11px;
+    color: #5D5D5B;
+}
+
+@media (min-width: 1024px) {
+    .exchange-crypto--form-fields {
+        margin-top: 46px;
+    }
+
+    .exchange-crypto--form-item {
+        padding: 21px 0;
+    }
+
+    .exchange-crypto--form-text {
+        max-width: 92px;
+    }
+}

@@ -1,0 +1,105 @@
+.exchange-crypto--footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 47px;
+}
+
+.exchange-crypto--down {
+    display: flex;
+    align-items: center;
+}
+
+.exchange-crypto--down, .exchange-crypto--social-text {
+    font-family: 'TT Firs Neue';
+    font-weight: 500;
+    font-size: 12px;
+    color: #6F767E;
+}
+
+.exchange-crypto--down:before {
+    content: '';
+    display: flex;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 16px;
+    background-image: url(./img/down.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.exchange-crypto--social {
+    display: flex;
+    align-items: center;
+}
+
+.exchange-crypto--social-network {
+    margin: 0 0 0 24px;
+    padding: 0;
+    display: flex;
+}
+
+.exchange-crypto--social-item {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .3s;
+}
+
+.exchange-crypto--social-item:hover {
+    background-color: #3E8BF3;
+}
+
+.exchange-crypto--social-item:active {
+    background-color: #295DA2;
+}
+
+.exchange-crypto--social li:not(:first-child) {
+    margin-left: 16px;
+}
+
+.exchange-crypto--social-item span {
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: background-image .3s;
+}
+
+.exchange-crypto--social-item.facebook span {
+    background-image: url(./img/facebook.svg);
+}
+
+.exchange-crypto--social-item.facebook:hover span {
+    background-image: url(./img/facebook-white.svg);
+}
+
+.exchange-crypto--social-item.twitter span {
+    background-image: url(./img/twitter.svg);
+}
+
+.exchange-crypto--social-item.twitter:hover span {
+    background-image: url(./img/twitter-white.svg);
+}
+
+.exchange-crypto--social-item.instagram span {
+    background-image: url(./img/instagram.svg);
+}
+
+.exchange-crypto--social-item.instagram:hover span {
+    background-image: url(./img/instagram-white.svg);
+}
+
+@media (min-width: 1024px) {
+    .exchange-crypto--footer {
+        margin-top: 118px;
+    }
+}

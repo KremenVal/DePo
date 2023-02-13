@@ -1,0 +1,66 @@
+.exchange-crypto--form-amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 27px;
+    width: 100%;
+    position: relative;
+}
+
+.exchange-crypto--form-convert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exchange-crypto--form-value {
+    display: flex;
+    align-content: center;
+    font-family: 'Inter Bold';
+    font-weight: 800;
+    font-size: 33px;
+    color: #000;
+}
+
+.exchange-crypto--form-currency {
+    outline: none;
+}
+
+[contentEditable=true]:empty:before {
+    content: '0.0';
+}
+
+.exchange-crypto--form-crypto {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 8px;
+    color: #5D5D5B;
+}
+
+.exchange-crypto--form-change {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(207, 219, 213, 0.6);
+    border-radius: 5px;
+    background-image: url(./img/change.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+}
+
+@media (min-width: 1024px) {
+    .exchange-crypto--form-amount {
+        margin-top: 46px;
+    }
+
+    .exchange-crypto--form-value {
+        font-size: 43px;
+    }
+
+    .exchange-crypto--form-crypto {
+        font-size: 11px;
+    }
+}

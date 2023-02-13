@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background: #F5F9FE;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+#root {
+    max-width: 1440px;
+    width: 100%;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: local('TT Firs Neue'), local('TT Firs Neue'), url(./fonts/TT-Firs-Neue-Trial-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter Bold';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: local('Inter Bold'), local('Inter Bold'), url(./fonts/Inter-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: local('Inter'), local('Inter'), url(./fonts/Inter.ttf) format('truetype');
+}

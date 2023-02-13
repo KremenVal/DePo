@@ -1,0 +1,21 @@
+.launch-app {
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #3E8BF3;
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    z-index: 0;
+    transition-property: z-index, background-color;
+    transition-duration: .3s;
+}
+
+.launch-app:hover {
+    background-color: #3474CA;
+}
+
+.launch-app:active {
+    background-color: #295DA2;
+}

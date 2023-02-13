@@ -1,0 +1,80 @@
+.header--container-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 34px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.header--container-item {
+    list-style: none;
+    position: relative;
+    display: flex;
+}
+
+.header--container-item:not(:first-child) {
+    margin-top: 24px;
+}
+
+.header--container-item a {
+    text-decoration: none;
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #6F767E;
+    transition: all 0.5s;
+}
+
+.header--container-underline {
+    display: flex;
+    background: #3E8BF3;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transition: all 0.5s;
+    opacity: 0;
+    bottom: -21px;
+}
+
+@media (min-width: 728px) {
+    .header--container-links {
+        margin-top: 44px;
+    }
+
+    .header--container-item a {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header--container-links {
+        flex-direction: row;
+        align-items: center;
+        margin-top: unset;
+        padding-bottom: unset;
+        border-bottom: unset;
+    }
+
+    .header--container-item a {
+        padding: 13px 0;
+    }
+
+    .header--container-item:hover a {
+        color: #3E8BF3;
+        padding: 13px 0;
+    }
+
+    .header--container-item:hover .header--container-underline {
+        opacity: 1;
+    }
+
+    .header--container-item:not(:first-child) {
+        margin-top: unset;
+        margin-left: 40px;
+    }
+
+    .header--container-item:first-child {
+        margin-left: 24px;
+    }
+}

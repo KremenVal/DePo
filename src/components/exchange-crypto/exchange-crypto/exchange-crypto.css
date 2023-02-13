@@ -1,0 +1,32 @@
+.exchange-crypto {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F9FE;
+    padding: 98px 16px 128px;
+}
+
+.exchange-crypto--container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 728px) {
+    .exchange-crypto {
+        padding: 172px 25px 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .exchange-crypto {
+        padding: 270px 25px 24px;
+        justify-content: flex-start;
+    }
+
+    .exchange-crypto--container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 108px;
+    }
+}

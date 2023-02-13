@@ -1,0 +1,255 @@
+.exchange-crypto--transfer {
+    max-width: 600px;
+    width: 100%;
+    margin-top: 116px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.exchange-crypto--transfer:before {
+    content: '';
+    display: block;
+    width: 418px;
+    height: 418px;
+    border-radius: 50%;
+    background-color: #E3EEFD;
+    position: absolute;
+}
+
+.exchange-crypto--form-actions:after {
+    content: '';
+    display: block;
+    background-image: url(./img/bsd.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 34px;
+    height: 35px;
+    position: absolute;
+    top: -75px;
+    left: 85px;
+}
+
+.exchange-crypto--form {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.04), 0 8px 16px rgba(0, 0, 0, 0.08);
+    min-width: 288px;
+    max-width: 254px;
+    border-radius: 9px;
+    width: 100%;
+    position: relative;
+}
+
+.exchange-crypto--form-wrapper {
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 10px 16px;
+    width: 100%;
+    z-index: 1;
+}
+
+.exchange-crypto--form-actions {
+    display: flex;
+    align-items: center;
+}
+
+.exchange-crypto--form-action {
+    padding: 7px 20px;
+    font-family: 'Inter Bold';
+    font-weight: 700;
+    font-size: 12px;
+    background-color: #fff;
+    border-radius: 6px;
+    color: #000;
+    transition: background-color .3s;
+}
+
+.exchange-crypto--form-action.selected {
+    background-color: #000;
+    color: #fff;
+}
+
+.exchange-crypto--form-action:first-child {
+    margin-right: 12px;
+}
+
+.exchange-crypto--form-send {
+    margin-top: 11px;
+    background-color: #3E8BF3;
+    border-radius: 6px;
+    min-width: 267px;
+    padding: 12px 0;
+    align-items: center;
+    color: #fff;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 14px;
+    transition: background-color .3s;
+}
+
+.exchange-crypto--form-wrapper:before {
+    content: '';
+    display: flex;
+    width: 77px;
+    height: 73px;
+    background-image: url(./img/usd.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: -65px;
+    left: 0;
+}
+
+.exchange-crypto--form-wrapper:after {
+    content: '';
+    display: flex;
+    width: 70px;
+    height: 75px;
+    background-image: url(./img/ether.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    right: 25px;
+    bottom: -95px;
+
+}
+
+.exchange-crypto--form-send:hover {
+    background-color: #3474CA;
+}
+
+.exchange-crypto--form-send:active {
+    background-color: #295DA2;
+}
+
+.exchange-crypto--arrow {
+    width: 237px;
+    height: 254px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+}
+
+.exchange-crypto--arrow.green {
+    top: -85px;
+    right: -85px;
+    background-image: url(./img/green_arrow.svg);
+}
+
+.exchange-crypto--arrow.blue {
+    bottom: -70px;
+    left: -90px;
+    background-image: url(./img/blue_arrow.svg);
+}
+
+@media (min-width: 728px) {
+    .exchange-crypto--transfer {
+        margin-top: unset;
+        order: 1;
+    }
+
+    .exchange-crypto--form-actions:after {
+        left: 55px;
+        top: -55px;
+    }
+
+    .exchange-crypto--form {
+        max-width: 343px;
+    }
+
+    .exchange-crypto--form-send {
+        min-width: 222px;
+    }
+
+    .exchange-crypto--form-wrapper:before {
+        width: 108px;
+        height: 102px;
+        left: -50px;
+        top: -40px;
+    }
+
+    .exchange-crypto--form-wrapper:after {
+        width: 90px;
+        height: 97px;
+        bottom: -45px;
+        right: -40px;
+    }
+
+    .exchange-crypto--arrow.green {
+        top: -75px;
+        right: -55px;
+    }
+
+    .exchange-crypto--arrow.blue {
+        bottom: -55px;
+        left: -60px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .exchange-crypto--transfer:before {
+        width: 554px;
+        height: 554px;
+    }
+
+    .exchange-crypto--form-wrapper {
+        padding: 19px;
+    }
+
+    .exchange-crypto--form {
+        max-width: 455px;
+    }
+
+    .exchange-crypto--transfer {
+        order: unset;
+    }
+
+    .exchange-crypto--form-actions:after {
+        width: 45px;
+        height: 46px;
+        left: 60px;
+        top: -80px;
+    }
+
+    .exchange-crypto--form-send {
+        margin-top: 21px;
+    }
+
+    .exchange-crypto--form-wrapper:before {
+        width: 143px;
+        height: 135px;
+        top: -48px;
+        left: -70px;
+    }
+
+    .exchange-crypto--form-wrapper:after {
+        width: 120px;
+        height: 129px;
+        right: -60px;
+        bottom: -65px;
+    }
+
+    .exchange-crypto--arrow {
+        width: 314px;
+        height: 337px;
+    }
+
+    .exchange-crypto--arrow.green {
+        top: -105px;
+        right: -75px;
+    }
+
+    .exchange-crypto--arrow.blue {
+        bottom: -85px;
+        left: -76px;
+    }
+}
